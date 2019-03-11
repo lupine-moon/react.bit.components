@@ -68,7 +68,7 @@ bit tag --all 1.0.1
 Export the components to Bit:
 
 ```
-bit export lupinemoon.interaction
+bit export lupine-moon.interaction
 ```
 
 ## Contribution guidelines
