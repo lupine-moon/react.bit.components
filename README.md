@@ -62,7 +62,7 @@ npm run test
 Tag the components:
 
 ```
-bit tag --all 1.0.1
+bit tag --all 1.0.0
 ```
 
 Export the components to Bit:
