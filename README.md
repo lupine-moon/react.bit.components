@@ -2,6 +2,8 @@
 
 React Bit components source repository.
 
+The components are uploaded to [Lupine Moon](https://bitsrc.io/lupine-moon) bitsrc account.
+
 ## Getting Started
 
 This project uses yarn:
