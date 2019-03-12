@@ -13,6 +13,7 @@ export interface ButtonProps {
 
 const StyledButton = styled.button`
 	display: inline-block;
+	cursor: pointer;
 	width: 11rem;
 	padding: 0.5rem 0;
 	margin: 0.5rem;
