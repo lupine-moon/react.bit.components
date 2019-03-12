@@ -84,24 +84,26 @@ class HtmlHead extends React.Component {
 	}
 
 	public render() {
-		const head: Array<React.DetailedReactHTMLElement<any, any>> = React.Children.map(
-			this.props.children,
-			(c) => c
-		)
-			.filter((c) => !!c)
-			.map((children) => React.Children.toArray(children))
-			.reduce((a, b) => a.concat(b), [])
-			.reverse()
-			.concat(...DEFAULT_HEAD)
-			.filter(unique())
-			.reverse()
-			.map((c: any) => {
-				const className = (c.className ? c.className + ' ' : '') + 'App__Html__Head';
+		if (this.props.children) {
+			const head: Array<React.DetailedReactHTMLElement<any, any>> = React.Children.map(
+				this.props.children,
+				(c) => c
+			)
+				.filter((c) => !!c)
+				.map((children) => React.Children.toArray(children))
+				.reduce((a, b) => a.concat(b), [])
+				.reverse()
+				.concat(...DEFAULT_HEAD)
+				.filter(unique())
+				.reverse()
+				.map((c: any) => {
+					const className = (c.className ? c.className + ' ' : '') + 'App__Html__Head';
 
-				return React.cloneElement(c, { className });
-			});
+					return React.cloneElement(c, { className });
+				});
 
-		this.updateHead(head);
+			this.updateHead(head);
+		}
 
 		return <div />;
 	}
