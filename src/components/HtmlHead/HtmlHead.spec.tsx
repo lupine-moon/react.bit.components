@@ -1,11 +1,16 @@
-import { mount, shallow } from 'enzyme';
+import * as Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import * as React from 'react';
 
 import HtmlHead from './HtmlHead';
 
+Enzyme.configure({
+	adapter: new Adapter()
+});
+
 describe('HtmlHead component', () => {
 	it('renders', () => {
-		const wrapper = shallow(
+		const wrapper = Enzyme.shallow(
 			<div>
 				<HtmlHead>
 					<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -20,7 +25,7 @@ describe('HtmlHead component', () => {
 	});
 
 	it('renders snapshot correctly', () => {
-		const wrapper = shallow(
+		const wrapper = Enzyme.shallow(
 			<HtmlHead>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 				<title>Hello</title>
@@ -31,7 +36,7 @@ describe('HtmlHead component', () => {
 	});
 
 	it('should mount component', () => {
-		const wrapper = mount(
+		const wrapper = Enzyme.mount(
 			<div>
 				<HtmlHead>
 					<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

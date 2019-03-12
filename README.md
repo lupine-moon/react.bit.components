@@ -35,22 +35,40 @@ The build is minified and the filenames include the hashes.
 
 ## Bit
 
+Install Bit:
+
+```
+npm install bit-bin -g
+```
+
 Login to Bit:
 
 ```
 bit login
 ```
 
-Add a new component:
+Add components:
 
 ```
-bit add src/components/Button
+bit add src/components/* -t 'src/components/{PARENT}/*.spec.tsx'
 ```
 
 Check the status of the components:
 
 ```
 bit status
+```
+
+Add the build environment:
+
+```
+bit import bit.envs/compilers/typescript --compiler
+```
+
+Add the test environment:
+
+```
+bit import bit.envs/testers/jest --tester
 ```
 
 Run the tests:

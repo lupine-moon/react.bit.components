@@ -12,5 +12,14 @@
 	"tslint.exclude": "**/node_modules/**/*",
 	"typescript.format.enable": true,
 	"typescript.validate.enable": true,
-	"window.zoomLevel": 0
+	"window.zoomLevel": 0,
+	"workbench.colorCustomizations": {
+		"titleBar.activeBackground": "#31bfed",
+		"titleBar.inactiveBackground": "#31bfed99",
+		"titleBar.activeForeground": "#15202b",
+		"titleBar.inactiveForeground": "#15202b99",
+		"statusBar.background": "#31bfed",
+		"statusBarItem.hoverBackground": "#13a8d8",
+		"statusBar.foreground": "#15202b"
+	}
 }

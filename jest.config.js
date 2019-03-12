@@ -13,6 +13,5 @@ module.exports = {
 			tsConfig: 'tsconfig.jest.json'
 		}
 	},
-	setupTestFrameworkScriptFile: '<rootDir>test/setupTests.ts',
 	snapshotSerializers: ['enzyme-to-json/serializer']
 };
