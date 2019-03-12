@@ -24,7 +24,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "lupine-moon.interaction/button@1.0.5": {
+    "lupine-moon.interaction/button@1.0.6": {
         "files": [
             {
                 "relativePath": "src/components/Button/Button.spec.tsx",

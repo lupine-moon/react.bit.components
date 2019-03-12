@@ -25,7 +25,7 @@ const StyledButton = styled.button`
 
 	:hover {
 		border: 1px solid transparent;
-		box-shadow: inset 10000px 0 0 rgba(255, 255, 255, 0.1);
+		box-shadow: inset 10000px 0 0 rgba(255, 255, 255, 0.2);
 		background: ${(props: ButtonProps) => props.color};
 	}
 
