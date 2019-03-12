@@ -23,6 +23,12 @@ const StyledButton = styled.button`
 	border-radius: ${(props: ButtonProps) => (props.borderRadius ? props.borderRadius : '0px')};
 	font-size: 14px;
 
+	:hover {
+		border: 0;
+		box-shadow: inset 10000px 0 0 rgba(0, 0, 0, 0.1);
+		background: ${(props: ButtonProps) => props.color};
+	}
+
 	${(props: ButtonProps) =>
 		props.primary &&
 		css`
